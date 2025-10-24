@@ -1,0 +1,7 @@
+{
+  "name": "filenet-content-assistant-stub",
+  "version": "1.0.0",
+  "bin": {
+    "filenet-content-assistant-stub": "index.js"
+  }
+}

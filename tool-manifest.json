@@ -1,0 +1,15 @@
+{
+  "tools": [
+    {
+      "id": "ask_content_assistant",
+      "name": "Ask Content Assistant",
+      "description": "Ask questions about documents in FileNet using IBM Content Assistant via GraphQL.",
+      "parameters": [
+        {
+          "name": "question",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
