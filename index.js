@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
-const { run } = require('fastmcp/client');
+const { spawn } = require('child_process');
 
-run({
-  url: process.env.MCP_URL || "https://5c1d4580785c.ngrok-free.app/mcp"
+const mcpUrl = process.env.MCP_URL || "https://5c1d4580785c.ngrok-free.app/mcp";
+
+const proc = spawn('npx', ['-y', 'fastmcp', 'client', '--url', mcpUrl], {
+  stdio: 'inherit'
 });
